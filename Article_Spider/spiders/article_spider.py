@@ -45,10 +45,10 @@ class ArticleSpider(scrapy.Spider):
             pass
         browser.get("https://www.zhihu.com/signin")
         browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys(Keys.CONTROL + "a")
-        browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys("13662241324")
+        browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys("xxx")
         time.sleep(2)
         browser.find_element_by_css_selector(".SignFlow-password input").send_keys(Keys.CONTROL + "a")
-        browser.find_element_by_css_selector(".SignFlow-password input").send_keys("root05030")
+        browser.find_element_by_css_selector(".SignFlow-password input").send_keys("xxx")
         browser.find_element_by_css_selector(".Button.SignFlow-submitButton").click()
         time.sleep(3)
         login_success = False
@@ -137,10 +137,10 @@ class ArticleSpider(scrapy.Spider):
 
                 browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys(
                     Keys.CONTROL + "a")
-                browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys("13662241324")
+                browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys("xxx")
                 time.sleep(2)
                 browser.find_element_by_css_selector(".SignFlow-password input").send_keys(Keys.CONTROL + "a")
-                browser.find_element_by_css_selector(".SignFlow-password input").send_keys("root0503")
+                browser.find_element_by_css_selector(".SignFlow-password input").send_keys("xxx")
 
                 move(911, 643)
                 click()
