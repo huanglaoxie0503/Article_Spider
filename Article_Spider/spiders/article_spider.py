@@ -137,12 +137,12 @@ class ArticleSpider(scrapy.Spider):
 
                 browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys(
                     Keys.CONTROL + "a")
-                browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys("xxx")
+                browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys("13662241324")
                 time.sleep(2)
                 browser.find_element_by_css_selector(".SignFlow-password input").send_keys(Keys.CONTROL + "a")
-                browser.find_element_by_css_selector(".SignFlow-password input").send_keys("xxx")
+                browser.find_element_by_css_selector(".SignFlow-password input").send_keys("root0503")
 
-                move(911, 643)
+                move(674, 527)
                 click()
 
             # 识别英语字母验证码
@@ -172,10 +172,11 @@ class ArticleSpider(scrapy.Spider):
                 browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys(
                     Keys.CONTROL + "a")
                 browser.find_element_by_css_selector(".SignFlow-accountInput.Input-wrapper input").send_keys(
-                    "xxx")
+                    "13662241324")
                 browser.find_element_by_css_selector(".SignFlow-password input").send_keys(Keys.CONTROL + "a")
-                browser.find_element_by_css_selector(".SignFlow-password input").send_keys("xxx")
-                move(895, 603)
+                browser.find_element_by_css_selector(".SignFlow-password input").send_keys("root0503")
+
+                move(674, 527)
                 click()
 
     def parse(self, response):
