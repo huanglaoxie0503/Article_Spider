@@ -68,9 +68,9 @@ RANDOM_UA_TYPE = "random"
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'Article_Spider.pipelines.ArticleSpiderPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'Article_Spider.pipelines.ArticleSpiderPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -92,3 +92,14 @@ RANDOM_UA_TYPE = "random"
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+mysql_host = '127.0.0.1'
+mysql_user = 'root'
+mysql_password = 'root'
+mysql_db = 'crawl'
+mysql_answer_table = 'article_answer'
+mysql_question_table = 'article_question'
+
+
+SQL_DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
+SQL_DATE_FORMAT = "%Y-%m-%d"

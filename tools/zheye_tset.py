@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 from zheye import zheye
-
 z = zheye()
-
-positions = z.Recognize(r"D:/work/Article_Spider/Article_Spider/zhuhu_image/a.gif")
+positions = z.Recognize(r"image/verify_code.gif")
 
 last_positions = []
 
